@@ -22,15 +22,15 @@ def analyze_sentiment(message):
 
     if score > 0:
         sentiment = "Positive"
-        print(Fore.GREEN + "Positive sentiment detected! 😊")
+        print(Fore.GREEN + "Positive sentiment detected! ")
 
     elif score < 0:
         sentiment = "Negative"
-        print(Fore.RED + "Negative sentiment detected! 😟")
+        print(Fore.RED + "Negative sentiment detected! ")
 
     else:
         sentiment = "Neutral"
-        print(Fore.YELLOW + "Neutral sentiment detected! 😐")
+        print(Fore.YELLOW + "Neutral sentiment detected! ")
 
     print("Sentiment Score:", round(score, 2))
 
